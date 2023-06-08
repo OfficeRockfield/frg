@@ -18,27 +18,34 @@ body {
 }
 
 h1{
-    padding: 2rem;
-}
-
-.content-table {
-    border-collapse: collapse;
-    border-spacing: 2rem;
-    font-size: 1rem;
-    width: 100%;
-    padding: 0 50px 0 50px;
+    padding: 8rem 0rem 2rem 0rem;
 }
 
 .container {
     display: block;
-    padding: 0 3rem 1rem 3rem;
+}
+
+.content-table {
+    max-width: 100%;
+    min-width: 80%;
+    border-collapse: collapse;
+    border-spacing: 2rem;
+    font-size: 1rem;
+    width: 100%;
+    /* padding: 0 50px 0 50px; */
+    /* table-layout: fixed; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-table th,
 .content-table td {
-    padding: 12px 15px;
+    padding: 12px;
     font-weight: 700;
     border: 2px solid rebeccapurple;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
 }
 
 .content-table th {
@@ -56,6 +63,7 @@ h1{
 
 .content-table th:first-child {
     border-left: 2px solid rebeccapurple;
+    text-transform: uppercase;
 }
 
 .content-table thead tr th:nth-child(1){
@@ -88,15 +96,35 @@ h1{
 
 .content-table thead .givingsets th:nth-child(5){
     background-color: white;
-    color: black;
+    color: rgb(17, 17, 17);
     border: 2px solid rebeccapurple;
 }
 
 .footer {
     font-weight: 700;
     font-size: small;
-    margin: 0 10rem 0 10rem;
-    padding-bottom: 5rem;
+    display: block;
+}
+
+.footer p {
+    padding: 1rem;
+    margin: auto;
+    max-width: 70%;
+    min-width: 30%;
+}
+
+.indicative {
+    margin: auto;
+    max-width: 40%;
+    min-width: 300px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 2rem;
+    text-align: center;  
+}
+
+.indicative h3 {
+    padding: 1rem;
 }
 
 /* .feed, .givingset {
