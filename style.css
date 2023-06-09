@@ -18,7 +18,7 @@ body {
 }
 
 h1{
-    padding: 8rem 0rem 2rem 0rem;
+    padding: 4rem 0rem 2rem 0rem;
 }
 
 .container {
@@ -26,14 +26,13 @@ h1{
 }
 
 .content-table {
-    max-width: 100%;
-    min-width: 80%;
+    max-width: 80%;
     border-collapse: collapse;
     border-spacing: 2rem;
     font-size: 1rem;
     width: 100%;
     /* padding: 0 50px 0 50px; */
-    /* table-layout: fixed; */
+    table-layout: fixed;
     margin-left: auto;
     margin-right: auto;
 }
@@ -55,6 +54,10 @@ h1{
     border-left: rebeccapurple;
 }
 
+.content-table td{
+    font-size: large;
+}
+
 .content-table thead tr th:nth-child(1){
     background-color: white;
     color: rebeccapurple;
@@ -66,6 +69,20 @@ h1{
     text-transform: uppercase;
 }
 
+.content-table .giving-set-images th{
+    background-color: white;
+    border: 0px solid white;
+    padding: 0rem 0.7rem;
+}
+
+.content-table .giving-set-images img{
+    display: block;  
+}
+
+.content-table thead .giving-set-images th:last-child{
+    border-right: 0px solid white;
+}
+
 .content-table thead tr th:nth-child(1){
     border-top: white;
     border-right: white;
@@ -75,7 +92,7 @@ h1{
     border-right: 2px solid rebeccapurple;
 }
 
-.content-table thead .givingsets th:nth-child(1){
+.content-table .givingsets th:nth-child(1){
     border-left: white;
 }
 
@@ -125,6 +142,96 @@ h1{
 
 .indicative h3 {
     padding: 1rem;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.container-table2 {
+    padding: 3rem 0rem;
+}
+
+.container-table2 .content-table {
+    table-layout: auto;
+}
+
+.container-table2 td{
+    text-align: left;
+}
+
+.content-table thead .table2title th:nth-child(1) {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: left;
+    /* border-top: 2px solid white; */
+    border-bottom: 2px solid white;
+    padding: 0.2rem;
+}
+
+.rockfieldlogo{
+    padding-bottom: 3rem;
+    width: 250px;
+}
+
+@media (max-width: 800px) {
+   
+    .content-table {
+        table-layout: fixed;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    
+    .container th,
+    .container-table2 td{
+        font-size: 0.6rem;
+    }
+
+    .container td,
+    .container-table2 th {
+        padding: 0rem;
+        font-size: 0.9rem;
+    }
+
+    .container th,
+    .container td {
+        white-space: nowrap;
+    }
+
+    .container tbody th:first-child,
+    .container .givingsets th {
+        white-space: normal;
+    }
+
+    .content-table thead .givingsets th{
+        font-size: 1rem;
+    }
+
+    .rockfieldlogo{
+        width: 60%;
+        padding-bottom: 3rem;
+    }
+
+    .footer p{
+        font-size: .6rem
+    }
+
+    .content-table .giving-set-images th{
+        padding: 0rem;
+        height: 60px;
+    }
+
+    .content-table .giving-set-images img{
+        transform-origin: center center; /* Set the rotation origin */
+        transform: rotate(90deg) scale(1.5); /* Rotate and scale the image */
+    }
 }
 
 /* .feed, .givingset {
