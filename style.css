@@ -178,7 +178,7 @@ h1{
 @media (max-width: 800px) {
    
     .content-table {
-        table-layout: fixed;
+        table-layout: auto;
         max-width: 90%;
     }
 
@@ -204,11 +204,18 @@ h1{
     .container th,
     .container td {
         white-space: nowrap;
+        padding: 0.5rem;
+    }
+
+    .container tbody th:first-child {
+        width: 1%;
+        
     }
 
     .container tbody th:first-child,
     .container .givingsets th {
         white-space: normal;
+        
     }
 
     .content-table thead .givingsets th{
@@ -226,7 +233,7 @@ h1{
 
     .content-table .giving-set-images th{
         padding: 0rem;
-        height: 60px;
+        height: 50px;
     }
 
     .content-table .giving-set-images img{
